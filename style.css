@@ -48,6 +48,7 @@ h1, h2 {
 }
 
 /* ===== PRODUCTS ===== */
+/* Products grid */
 .products {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -55,28 +56,55 @@ h1, h2 {
   padding: 20px;
 }
 
+/* Product card */
 .product {
   background: white;
-  border-radius: 12px;
+  border-radius: 15px;
   padding: 15px;
   text-align: center;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  transition: all 0.3s ease;
 }
 
 .product img {
   width: 100%;
   height: 180px;
   object-fit: cover;
-  border-radius: 10px;
+  border-radius: 12px;
 }
 
 .product h3 {
   margin: 10px 0 5px;
+  color: #E91E63;
 }
 
 .product p {
   color: #4CAF50;
   font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.product button {
+  background-color: #E91E63;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: all 0.3s ease;
+}
+
+.product button:hover {
+  background-color: #C2185B;
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+/* Hover effect for product card */
+.product:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
 }
 
 /* ===== BUTTONS ===== */
