@@ -5,18 +5,6 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
-    <!-- Product Modal -->
-<div id="productModal" class="modal">
-  <div class="modal-content">
-    <span class="close" onclick="closeModal()">&times;</span>
-    <h2 id="modalTitle"></h2>
-    <p id="modalPrice"></p>
-    <p id="modalDescription"></p>
-    <div id="modalImages" class="modal-images"></div>
-    <button id="modalAddCart">Add to Cart</button>
-  </div>
-</div>
 
 <nav>
   <a href="index.html">Home</a>
@@ -37,8 +25,7 @@
   <div class="carousel-slide">
 
     <div class="product">
-      <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93" alt="Rose Bouquet" 
-      onclick="openModal('Rose Bouquet','KES 1,500','Fresh red roses hand-arranged in a beautiful bouquet. Perfect for anniversaries and gifts.',['https://images.unsplash.com/photo-1509042239860-f550ce710b93','https://images.unsplash.com/photo-1524504388940-b1c1722653e1'])">
+      <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93" alt="Rose Bouquet" onclick="openModal('Rose Bouquet','KES 1,500','Fresh red roses hand-arranged in a beautiful bouquet. Perfect for anniversaries and gifts.',['https://images.unsplash.com/photo-1509042239860-f550ce710b93','https://images.unsplash.com/photo-1524504388940-b1c1722653e1'])">
       <h3>Rose Bouquet</h3>
       <p>KES 1,500</p>
       <button onclick="addToCart('Rose Bouquet',1500)">Add to Cart</button>
@@ -70,6 +57,18 @@
 
 <div style="text-align:center; margin-top:30px;">
   <a href="products.html" class="btn-primary">View All Flowers 🌷</a>
+</div>
+
+    <!-- Product Modal -->
+<div id="productModal" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal()">&times;</span>
+    <h2 id="modalTitle"></h2>
+    <p id="modalPrice"></p>
+    <p id="modalDescription"></p>
+    <div id="modalImages" class="modal-images"></div>
+    <button id="modalAddCart">Add to Cart</button>
+  </div>
 </div>
 
 <script src="script.js"></script>

@@ -44,7 +44,12 @@ function showNextSlide() {
 
 setInterval(showNextSlide, 3000); // Slide every 3 seconds
 
-// Open modal
+function addToCart(name, price) {
+  alert(name + " added to cart for KES " + price);
+  // Your cart logic here
+}
+
+// Modal JS
 function openModal(title, price, description, images) {
   document.getElementById('modalTitle').innerText = title;
   document.getElementById('modalPrice').innerText = price;
@@ -59,20 +64,17 @@ function openModal(title, price, description, images) {
   });
 
   document.getElementById('modalAddCart').onclick = function() {
-    const priceNum = parseInt(price.replace(/\D/g,''));
-    addToCart(title, priceNum);
+    addToCart(title, parseInt(price.replace(/\D/g,'')));
     closeModal();
   }
 
   document.getElementById('productModal').style.display = 'block';
 }
 
-// Close modal
 function closeModal() {
   document.getElementById('productModal').style.display = 'none';
 }
 
-// Close when clicking outside
 window.onclick = function(event) {
   const modal = document.getElementById('productModal');
   if (event.target == modal) modal.style.display = 'none';
