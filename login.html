@@ -1,16 +1,37 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Login</title>
+  <title>Login | Flower Shop</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<h2>Login</h2>
+<nav>
+  <a href="index.html">Home</a>
+  <a href="products.html">Flowers</a>
+  <a href="about.html">About Us</a>
+</nav>
 
-<input id="loginEmail" placeholder="Email">
-<input id="loginPassword" type="password" placeholder="Password">
-<button onclick="login()">Login</button>
+<div style="max-width:400px; margin:60px auto; background:white; padding:30px; border-radius:15px; box-shadow:0 5px 15px rgba(0,0,0,0.1);">
+
+  <h2 style="text-align:center;">Welcome Back 🌷</h2>
+  <p style="text-align:center; color:#777;">
+    Login to continue shopping fresh flowers
+  </p>
+
+  <input id="loginEmail" type="email" placeholder="Email address">
+  <input id="loginPassword" type="password" placeholder="Password">
+
+  <button style="width:100%; margin-top:10px;" onclick="login()">
+    Login
+  </button>
+
+  <p style="text-align:center; margin-top:15px;">
+    Don’t have an account?
+    <a href="register.html" style="color:#E91E63;">Create one 🌸</a>
+  </p>
+
+</div>
 
 <script src="script.js"></script>
 </body>
