@@ -43,3 +43,37 @@ function showNextSlide() {
 }
 
 setInterval(showNextSlide, 3000); // Slide every 3 seconds
+
+// Open modal
+function openModal(title, price, description, images) {
+  document.getElementById('modalTitle').innerText = title;
+  document.getElementById('modalPrice').innerText = price;
+  document.getElementById('modalDescription').innerText = description;
+
+  const modalImagesDiv = document.getElementById('modalImages');
+  modalImagesDiv.innerHTML = '';
+  images.forEach(src => {
+    const img = document.createElement('img');
+    img.src = src;
+    modalImagesDiv.appendChild(img);
+  });
+
+  document.getElementById('modalAddCart').onclick = function() {
+    const priceNum = parseInt(price.replace(/\D/g,''));
+    addToCart(title, priceNum);
+    closeModal();
+  }
+
+  document.getElementById('productModal').style.display = 'block';
+}
+
+// Close modal
+function closeModal() {
+  document.getElementById('productModal').style.display = 'none';
+}
+
+// Close when clicking outside
+window.onclick = function(event) {
+  const modal = document.getElementById('productModal');
+  if (event.target == modal) modal.style.display = 'none';
+}
