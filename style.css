@@ -107,6 +107,25 @@ h1, h2 {
   box-shadow: 0 10px 25px rgba(0,0,0,0.2);
 }
 
+/* Carousel container */
+.carousel-container {
+  width: 100%;
+  overflow: hidden;
+  padding: 20px 0;
+}
+
+/* Slide row */
+.carousel-slide {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+/* Product card inside carousel */
+.carousel-slide .product {
+  min-width: 250px;
+  margin-right: 20px;
+}
+
 /* ===== BUTTONS ===== */
 button {
   background-color: #E91E63;

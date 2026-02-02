@@ -30,3 +30,16 @@ function addToCart(name, price) {
   localStorage.setItem("cart", JSON.stringify(cart));
   alert("Added to cart");
 }
+
+// Carousel Auto Slide
+let slideIndex = 0;
+const slideContainer = document.querySelector('.carousel-slide');
+const totalSlides = document.querySelectorAll('.carousel-slide .product').length;
+
+function showNextSlide() {
+  slideIndex++;
+  if(slideIndex >= totalSlides) slideIndex = 0;
+  slideContainer.style.transform = `translateX(-${slideIndex * 270}px)`; // 250px card + 20px gap
+}
+
+setInterval(showNextSlide, 3000); // Slide every 3 seconds
