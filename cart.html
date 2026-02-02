@@ -1,15 +1,30 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Your Cart</title>
+  <title>Cart | Flower Shop</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<h2>Your Cart</h2>
-<div id="cart"></div>
+<nav>
+  <a href="index.html">Home</a>
+  <a href="products.html">Flowers</a>
+  <a href="about.html">About Us</a>
+  <a href="gallery.html">Gallery</a>
+</nav>
 
-<button onclick="clearCart()">Clear Cart</button>
+<h2 style="text-align:center; margin-top:40px;">Your Cart 🛒</h2>
+
+<div id="cart" class="products" style="grid-template-columns: 1fr;"></div>
+
+<div style="text-align:center; margin-top:20px;">
+  <button onclick="clearCart()">Clear Cart</button>
+  <p style="color:#777; margin-top:10px;">Items are stored locally for your convenience.</p>
+</div>
+
+<footer>
+  🌺 Order flowers and make every moment special 🌺
+</footer>
 
 <script src="script.js"></script>
 </body>
