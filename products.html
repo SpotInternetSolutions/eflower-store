@@ -1,26 +1,58 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Products</title>
+  <title>Our Flowers</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<h2>Products</h2>
+<nav>
+  <a href="index.html">Home</a>
+  <a href="about.html">About Us</a>
+  <a href="gallery.html">Gallery</a>
+  <a href="cart.html">Cart</a>
+</nav>
 
-<div class="product">
-  <h3>Product 1</h3>
-  <p>KES 1,500</p>
-  <button onclick="addToCart('Product 1',1500)">Add to Cart</button>
+<h2 style="text-align:center;">Our Beautiful Flowers 🌸</h2>
+<p style="text-align:center;">
+  Hand-picked fresh flowers for every occasion
+</p>
+
+<div class="products">
+
+  <div class="product">
+    <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93">
+    <h3>Rose Bouquet</h3>
+    <p>KES 1,500</p>
+    <button onclick="addToCart('Rose Bouquet',1500)">Add to Cart</button>
+  </div>
+
+  <div class="product">
+    <img src="https://images.unsplash.com/photo-1490750967868-88aa4486c946">
+    <h3>Mixed Flower Basket</h3>
+    <p>KES 2,000</p>
+    <button onclick="addToCart('Mixed Flower Basket',2000)">Add to Cart</button>
+  </div>
+
+  <div class="product">
+    <img src="https://images.unsplash.com/photo-1501004318641-b39e6451bec6">
+    <h3>Tulip Arrangement</h3>
+    <p>KES 2,500</p>
+    <button onclick="addToCart('Tulip Arrangement',2500)">Add to Cart</button>
+  </div>
+
+  <div class="product">
+    <img src="https://images.unsplash.com/photo-1496062031456-07b8f162a322">
+    <h3>Wedding Flower Set</h3>
+    <p>KES 5,000</p>
+    <button onclick="addToCart('Wedding Flower Set',5000)">Add to Cart</button>
+  </div>
+
 </div>
 
-<div class="product">
-  <h3>Product 2</h3>
-  <p>KES 2,000</p>
-  <button onclick="addToCart('Product 2',2000)">Add to Cart</button>
-</div>
-
-<a href="cart.html">🛒 Go to Cart</a>
+<footer>
+  🌷 Fresh flowers, beautiful moments 🌷
+</footer>
 
 <script src="script.js"></script>
 </body>
