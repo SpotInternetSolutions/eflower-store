@@ -94,6 +94,24 @@ button:hover {
   background-color: #C2185B;
 }
 
+.btn-primary {
+  display: inline-block;
+  background: linear-gradient(90deg, #E91E63, #F06292);
+  color: white;
+  font-weight: 600;
+  padding: 12px 25px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-size: 16px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+  transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+}
+
 /* ===== FORMS ===== */
 input {
   width: 100%;
