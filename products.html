@@ -78,18 +78,25 @@
   <a href="products.html" class="btn-primary">View All Flowers 🌷</a>
 </div>
 
-    <!-- Product Modal -->
+<!-- Product Modal -->
 <div id="productModal" class="modal">
   <div class="modal-content">
     <span class="close" onclick="closeModal()">&times;</span>
+
     <h2 id="modalTitle"></h2>
     <p id="modalPrice"></p>
-    <p id="modalDescription"></p>
+
+    <!-- MAIN IMAGE -->
+    <img id="modalMainImage" class="modal-main-img" src="" alt="Product image">
+
+    <!-- THUMBNAILS -->
     <div id="modalImages" class="modal-images"></div>
-    <button id="modalAddCart">Add to Cart</button>
+
+    <p id="modalDescription"></p>
+
+    <button id="modalAddCart" class="btn-primary">Add to Cart</button>
   </div>
 </div>
-
 <footer>
   🌷 Fresh flowers, beautiful moments 🌷
 </footer>
