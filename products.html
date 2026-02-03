@@ -66,11 +66,20 @@
 
 
   <div class="product">
-    <img src="https://images.unsplash.com/photo-1496062031456-07b8f162a322">
-    <h3>Wedding Flower Set</h3>
-    <p>KES 5,000</p>
-    <button onclick="addToCart('Wedding Flower Set',5000)">Add to Cart</button>
-  </div>
+  <img src="https://images.unsplash.com/photo-1496062031456-07b8f162a322"
+       onclick="openModal(
+         'Wedding Flower Set',
+         'KES 5,000',
+         'A luxurious wedding flower set designed for elegant ceremonies and receptions.',
+         [
+           'https://images.unsplash.com/photo-1496062031456-07b8f162a322',
+           'https://images.unsplash.com/photo-1526045612212-70caf35c14df'
+         ]
+       )">
+  <h3>Wedding Flower Set</h3>
+  <p>KES 5,000</p>
+  <button onclick="addToCart('Wedding Flower Set',5000)">Add to Cart</button>
+</div>
 
 </div>
 
@@ -96,6 +105,7 @@
 
     <button id="modalAddCart" class="btn-primary">Add to Cart</button>
   </div>
+</div>
 </div>
 </div>
 
