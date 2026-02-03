@@ -51,9 +51,11 @@ h1, h2 {
 /* Products grid */
 .products {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  grid-template-columns: repeat(4, 1fr);
   gap: 20px;
   padding: 20px;
+  max-width: 1200px;
+  margin: auto;
 }
 
 /* Product card */
@@ -227,4 +229,17 @@ footer {
   background-color: #E91E63;
   color: white;
   margin-top: 40px;
+}
+/* Tablet */
+@media (max-width: 992px) {
+  .products {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Mobile */
+@media (max-width: 576px) {
+  .products {
+    grid-template-columns: 1fr;
+  }
 }
