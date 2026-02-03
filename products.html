@@ -18,6 +18,8 @@
   Hand-picked fresh flowers for every occasion
 </p>
 
+<div class="carousel-container">
+  <div class="carousel-slide">
 <div class="products">
 
   <div class="product">
@@ -70,6 +72,22 @@
     <button onclick="addToCart('Wedding Flower Set',5000)">Add to Cart</button>
   </div>
 
+</div>
+
+<div style="text-align:center; margin-top:30px;">
+  <a href="products.html" class="btn-primary">View All Flowers 🌷</a>
+</div>
+
+    <!-- Product Modal -->
+<div id="productModal" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal()">&times;</span>
+    <h2 id="modalTitle"></h2>
+    <p id="modalPrice"></p>
+    <p id="modalDescription"></p>
+    <div id="modalImages" class="modal-images"></div>
+    <button id="modalAddCart">Add to Cart</button>
+  </div>
 </div>
 
 <footer>
